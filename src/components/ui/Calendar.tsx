@@ -38,7 +38,7 @@ const Calendars = () => {
     setCurrentDate(new Date(year, month + 1));
   };
 
-  const isToday = (day) => {
+  const isToday = (day: number): boolean => {
     return (
       day === today.getDate() &&
       month === today.getMonth() &&
